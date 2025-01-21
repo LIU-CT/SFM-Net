@@ -10,8 +10,8 @@ E-mail: liuchunting@kuicr.kyoto-u.ac.jp
 * The division of the 10 folds in the ten-fold cross-validation experiment follows the same division as MpbPPI (refering to https://github.com/arantir123/MpbPPI).
 
 ## Installation
-(1) Install protT5
-The language model protT5 (referring to https://github.com/agemagician/ProtTrans) can be installed via
+(1) Install ProtT5
+The language model ProtT5 (referring to https://github.com/agemagician/ProtTrans) can be installed via
 ```
 pip install transformers
 pip install sentencepiece
@@ -24,3 +24,9 @@ pip install sentencepiece
 <br>To download and install the DSSP, please refer to https://swift.cmbi.umcn.nl/gv/dssp/
 * Install FoldX for the PDB files of mutant complexes:
 <br>To download and install the FoldX, please refer to https://foldxsuite.crg.eu/
+
+## Create Dataset:
+1. Download PDB files and use FoldX to calculate the structures of mutant complexes.
+2. Preprocess the PDB files.
+3. Extract features using ProtT5, DSSP, and PSSM.
+4. Construct contact maps based on the 3D coordinates of residues.
