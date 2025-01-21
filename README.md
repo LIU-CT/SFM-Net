@@ -25,7 +25,7 @@ pip install sentencepiece
 * Install FoldX for the PDB files of mutant complexes:
 <br>To download and install the FoldX, please refer to https://foldxsuite.crg.eu/
 
-## Create Dataset:
+## Pipeline for creating a torch_geometric.data dataset
 1. Download PDB files and use FoldX to calculate the structures of mutant complexes.
 2. Preprocess the PDB files.
 3. Extract features using ProtT5, DSSP, and PSSM.
